@@ -2,9 +2,6 @@ var Arrow = require("arrow");
 
 var Model = Arrow.createModel("finalHome", {
     "fields" : {
-        "home_id" : {
-            "type" : "Number"
-        },
         "name" : {
             "type" : "String"
         },
@@ -15,7 +12,7 @@ var Model = Arrow.createModel("finalHome", {
             "type" : "String"
         }
     },
-    "connector" : "memory",
+    "connector" : "appc.arrowdb",
     "actions" : ["create", "read", "update", "delete", "deleteAll"],
     "singular" : "finalHome",
     "plural" : "finalHomes"
